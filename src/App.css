@@ -1,0 +1,125 @@
+.app {
+  max-width: 1200px;
+  margin: auto;
+}
+
+/** Header component */
+.header div {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 20px 0;
+  padding: 10px;
+  border: 1px solid #a4a4a4;
+  border-radius: 10px;
+  background-color: #fff;
+}
+
+.header div p {
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.header div button {
+  margin-left: 30px;
+  padding: 10px;
+  width: 100px;
+  background-color: #ff9900;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/**Playlist component  */
+.play-list {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.play-list .play-list-info {
+  align-self: center;
+  margin-left: 50px;
+}
+
+.play-list .play-list-info h1 {
+  font-size: 40px;
+}
+
+.play-list .play-list-info p {
+  margin: 20px 0;
+  color: #020202;
+  font-size: 20px;
+}
+
+.play-list .play-list-info button {
+  padding: 10px;
+  width: 150px;
+  background-color: #ff9900;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.play-list .play-list-trend {
+  width: 300px;
+  padding: 10px;
+  background-color: #666666;
+  text-align: center;
+}
+
+.play-list .play-list-trend h2 {
+  margin: 20px 0;
+}
+
+.play-list .play-list-trend ul li {
+  padding: 10px;
+  background-color: #fff;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  cursor: pointer;
+}
+
+.play-list .play-list-trend .cross {
+  font-weight: bold;
+}
+
+.play-list .play-list-trend button {
+  padding: 10px;
+  width: 150px;
+  background-color: #ff9900;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+@media all and (max-width: 768px) {
+  .play-list {
+    margin-right: 10px;
+  }
+}
+
+@media all and (max-width: 640px) {
+  .play-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+    align-items: center;
+    margin: 20px 0;
+  }
+
+  .play-list .play-list-info {
+    margin: 0;
+  }
+}
